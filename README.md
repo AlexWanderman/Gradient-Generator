@@ -2,7 +2,7 @@
 A simple script that creates a gradient between two colors with a specified number of steps.
 
 For example:
-
+```
 Введите hex значение начала градиента: dc6f6f
 Введите hex значение конца градиента: fac3c3
 Введите число промежуточных шагов: 5
@@ -17,3 +17,4 @@ For example:
 5) f0a7a7 (240 : 167 : 167)
 6) f5b5b5 (245 : 181 : 181)
 7) fac3c3 (250 : 195 : 195)
+```
