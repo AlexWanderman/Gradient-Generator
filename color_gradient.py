@@ -1,4 +1,8 @@
-def gradient(st, sp, n):
+def main():
+    st = input('Введите hex значение начала градиента: ')
+    sp = input('Введите hex значение конца градиента: ')
+    n = int(input('Введите число промежуточных шагов: ')) + 1
+
     r1, g1, b1 = int(st[0:2], 16), int(st[2:4], 16), int(st[4:6], 16)
     r2, g2, b2 = int(sp[0:2], 16), int(sp[2:4], 16), int(sp[4:6], 16)
 
@@ -11,6 +15,7 @@ def gradient(st, sp, n):
     print(f'{rs:.3f} {gs:.3f} {bs:.3f}\n')
 
     print(f'1) {st} ({r1} : {g1} : {b1})')
+
     for i in range(n):
         rt = int(r1 + rs * (i + 1))
         gt = int(g1 + gs * (i + 1))
@@ -26,9 +31,6 @@ def gradient(st, sp, n):
 
         print(f'{i+2}) {r}{g}{b} ({rt} : {gt} : {bt})')
 
-if __name__ == "__main__":
-    st = input('Введите hex значение начала градиента: ')
-    sp = input('Введите hex значение конца градиента: ')
-    n = int(input('Введите число промежуточных шагов: ')) + 1
 
-    gradient(st, sp, n)
+if __name__ == "__main__":
+    main()
